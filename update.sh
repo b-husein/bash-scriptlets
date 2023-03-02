@@ -28,3 +28,23 @@ sudo apt autoremove -y
 sudo apt autoclean -y
     sleep 1
 echo "All done."
+
+########## cron job ########
+
+# To add a cron job to this script
+# and schedule it to run every day at 15.00h
+# follow the steps below:
+
+# $ crontab -e
+# add following parameters into file: 0 15 * * * /path/to/your/script.sh
+# for example: 0 15 * * * /home/husein/Downloads/update.sh
+# save and exit the crontab file.
+
+# Parameters explained: 
+# 0 - minutes
+# 15 - hours 
+# * - every day of the month
+# * - every month
+# * - every day of the week
+
+############################
